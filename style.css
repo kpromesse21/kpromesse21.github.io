@@ -1,0 +1,75 @@
+
+.section1{
+    box-sizing: border-box;
+    padding-top: 100px;
+    position: relative;
+    width: 75%;
+    height: 85%;
+    
+    background: #8FA1CF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px 30px;
+}
+.section2{
+
+    box-sizing: border-box;
+
+    position: relative;
+    width: 394px;
+    height: 204px;
+    left: 10px;
+    top: 328px;
+    
+    background: #404040;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.img{
+    position: absolute;
+    width: 100%;
+    height: 293px;
+    left: 0px;
+    top: 1px;
+    
+    background: url(flat-lay-workstation-with-copy-space-laptop.jpg);
+    border-radius: 0px 30px 0px 0px;
+}
+header{
+   
+position: absolute;
+width: 461px;
+height: 49px;
+
+background: #D9D9D9;
+border-radius: 10px 0px 0px 10px;
+}
+
+.btn{
+   /* Button - Open Links, Navigate Design */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+position: relative;
+width: 121px;
+height: 37px;
+
+top: 242px;
+ 
+}
+.section3{
+box-sizing: border-box;
+position: relative;
+width: 155px;
+height: 80%;
+top: 328px;
+background: #404040;
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 10px;
+}
+
