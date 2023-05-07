@@ -8,43 +8,123 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    </style>
+
 </head>
+<script>
+    var TxtRotate = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 1) || 500;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function () {
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        // var css = document.createElement("style");
+        // css.type = "text/css";
+        // css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        // document.body.appendChild(css);
+    };
+</script>
 
 <body>
 
 
-    <header class="mx-auto mb-5">
+
+
+
+    <header class="mx-auto h-[50px]  mt-5 w-[75%]">
         <!-- titre et logo -->
         <div>
             <span>
                 <!-- logo -->
             </span>
-            <h1 class="text-xl">Portefolio</h1>
+            <h1 class="text-xl ">Portefolio</h1>
         </div>
 
     </header>
-    <main class="section1 mx-auto">
-<a href="#" class="btn z-40 bg-sky-200 px-5 pt-1 w-[150px] rounded-md text-center hover:bg-sky-500 hover:text-white mx-auto" >Me contacter</a>
-        <img src="flat.jpg" alt="" srcset="" class="img">
-        <div class="flex justify-items-center">
-            <div class="section2 mx-5">
+    <main class="section1 mx-auto overflow-hiden">
+
+        <img src="flat.jpg" alt="" srcset="" class="mb-[50px]"> <a href="#"
+            class="btn  bg-sky-200 px-5 pt-1 w-[150px] rounded-md text-center hover:bg-sky-500 hover:text-white mx-auto justify-items-center">Me
+            contacter</a>
+        <!-- test -->
+        <div class="z-[3000] mt-[-120px] mb-[100px]">
+           <p class="text-xl text-white uppercase" style="font-size: 35px;"># <span class="txt-rotate" data-period="500"
+                    data-rotate='[ "the edge of design is nothing.", "in design less is more.", "the value of design is non-fungible.", "pretty.", "ggg" ]'></span>
+           </p>
+            
+        </div>
+
+
+
+
+        <div class="row md:flex m-5 justify-items-center text-align-center grid-flow-col mb-[200px]">
+            <div class="section2 mx-auto md:w-[65%] my-5">
                 <h2 class="text-lg">competances</h2>
-                <div class="p-[10px] text-white">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic atque cum minus numquam soluta et.
+                <div class="p-[10px] text-white container-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic atque cum minus numquam
+                        soluta
+                        et.
                         Quisquam
-                        dolorum amet perspiciatis, iure modi velit consequuntur placeat quaerat, dolorem culpa ut saepe
+                        dolorum amet perspiciatis, iure modi velit consequuntur placeat quaerat, dolorem culpa ut
+                        saepe
                         consequatur
                         nostrum nobis nihil distinctio mollitia doloremque laborum temporibus ratione.</p>
                 </div>
             </div>
-            
-            <div class="section3 mx-5">
+
+            <div class="section3 mx-auto md:w-[30%] my-5">
                 <h2 class="text-lg">competances</h2>
                 <div class="p-[10px] text-white">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic atque cum minus numquam soluta et.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic atque cum minus numquam
+                        soluta
+                        et.
                         Quisquam
-                        dolorum amet perspiciatis, iure modi velit consequuntur placeat quaerat, dolorem culpa ut saepe
+                        dolorum amet perspiciatis, iure modi velit consequuntur placeat quaerat, dolorem culpa ut
+                        saepe
                         consequatur
                         nostrum nobis nihil distinctio mollitia doloremque laborum temporibus ratione.</p>
                 </div>
