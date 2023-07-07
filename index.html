@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portefolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
 </head>
@@ -70,80 +71,44 @@
 </script> -->
 
 <body>
-
-
-
-
-
-    <header class="mx-auto h-[50px]  mt-5 w-[75%]">
-        <!-- titre et logo -->
-        <div>
-            <span>
-                <!-- logo -->
-            </span>
-            <h1 class="text-xl ">Portefolio</h1>
-        </div>
-
-    </header>
-    <main class="section1">
-
-        <img src="flat.jpg" alt="" srcset="" class="image"> 
-        <a href = "mailto:kprmesse1@gmail.com"
-            class="btn  bg-sky-200 px-5 pt-1 w-[150px] rounded-md text-center hover:bg-sky-500 hover:text-white mx-auto justify-items-center">Me
-            contacter</a>
-        <!-- test -->
-        <div class="z-[3000] mt-[-120px] mb-[100px]">
-            <p class="text-xl text-white uppercase" style="font-size: 35px;"># <span class="txt-rotate"
-                    data-period="500"
-                    data-rotate='[ "the edge of design is nothing.", "in design less is more.", "the value of design is non-fungible.", "pretty.", "ggg" ]'></span>
-            </p>
-
-        </div>
-
-
-
-
-        <div class="row md:flex m-5 justify-items-center text-align-center grid-flow-col mb-[200px]">
-            <div class="section2 mx-auto md:w-[65%] my-5">
-                <h2 class="text-lg">competances</h2>
-                <div class="p-[10px] text-white container-fluid">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic atque cum minus numquam
-                        soluta
-                        et.
-                        Quisquam
-                        dolorum amet perspiciatis, iure modi velit consequuntur placeat quaerat, dolorem culpa ut
-                        saepe
-                        consequatur
-                        nostrum nobis nihil distinctio mollitia doloremque laborum temporibus ratione.</p>
-                </div>
-            </div>
-
-            <div class="section3 mx-auto md:w-[30%] my-5">
-                <h2 class="text-lg">competances</h2>
-                <div class="p-[10px] text-white">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet hic atque cum minus numquam
-                        soluta
-                        et.
-                        Quisquam
-                        dolorum amet perspiciatis, iure modi velit consequuntur placeat quaerat, dolorem culpa ut
-                        saepe
-                        consequatur
-                        nostrum nobis nihil distinctio mollitia doloremque laborum temporibus ratione.</p>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <ul class="contact">
-            <li>gmail</li>
-            <li>telephone</li>
-            <li>github</li>
-            <li>facebook</li>
-            <li>telegram</li>
+    <!-- header 
+    il va contenir la navigation
+    et le logo
+-->
+    <header>
+<span><h1 class="logo">PF</h1></span>
+        <ul class="navigation">
+            <li><a href="http://">articles</a></li>
+            <li><a href="#">a propos</a></li>
+            <li><a href="">sides projects</a></li>
+            <li><a href="#contact">contact</a></li>
         </ul>
-    </footer>
+    </header>
 
+    <!-- main
+        il doit y avoir une description du dev
+        et aussi une image de theme
+        comme descriptiom :
+            -competences et niveau
+            -experience
+            -langues parle et niveau
+            -localisation
+
+        -->
+<div class="main_container">
+    <img class="banner" src="img/flat.jpg" alt="image ilustrant le theme du devellopement web" srcset="">
+</div>
+    <footer>
+        <div id="contact">
+            <ul>
+                <li>github</li>
+                <li>gmail</li>
+                <li>telgram</li>
+                <li>tweeter</li>
+                <li>linkedin</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
