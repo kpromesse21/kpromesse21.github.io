@@ -61,3 +61,149 @@ header{
 .banner{
     width: 100%;
 }
+
+footer{
+    background-color: #494454;
+    color: #000049;
+}
+ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+
+
+/* color du site */
+/* 
+
+
+#10105F
+#7B0D68
+#C1325F
+#EE6F51
+#FFB34E
+#F9F871
+Dégradé correspondant
+#10105F
+#003E8B
+#0066A7
+#008EB6
+#00B5BC
+#63DAC0
+Palette de tons directs
+#10105F
+#4F4271
+#F7EBFF
+#00C8A0
+Palette de taches torsadées
+#10105F
+#00C8A0
+#C6FCED
+#4E8074
+Palette élégante
+#10105F
+#AEA8BA
+#7A7485
+#550000
+#8E1E1D
+Palette de cubes
+#10105F
+#7AB4C1
+#E8D5B5
+Changer de palette
+#10105F
+#CCB1FF
+#00C8A0
+#FFFADE
+Petite palette de commutateurs
+#10105F
+#CCE7EE
+#008396
+Ignorer le dégradé
+#10105F
+#45EDCC
+#00B496
+#007E63
+Palette Naturelle
+#10105F
+#978AB5
+#FCF7FF
+#FFFADE
+Palette assortie
+#10105F
+#494454
+#AEA8BA
+#00422C
+#00755A
+Palette de courge
+#10105F
+#522B00
+#00456F
+Amis gris
+#10105F
+#494454
+#AEA8BA
+Palette de points
+#10105F
+#AEA8BA
+#550000
+#BFA6A1
+Ignorer le dégradé d'ombre
+#10105F
+#0061AE
+#00B0D2
+#58FBDA
+Trio
+#10105F
+#7E2A00
+#004438
+Palette de surbrillance
+#10105F
+#987DF8
+#FFFADE
+#E8D5B5
+Palette voisine
+#10105F
+#7AB4C1
+#008396
+#324B50
+Palette discrète
+#10105F
+#978AB5
+#FBF8FF
+#E8D5B5
+Palette de poussière
+#10105F
+#AEA8BA
+#7A7485
+#8E1E1D
+Collectif
+#10105F
+#78137F
+#870000
+Palette d'amis
+#10105F
+#B59CFF
+#00AC86
+#005B3D
+Palette d'épingles
+#10105F
+#987DF8
+#FFFADE
+#00E5BB
+Nuances
+#10105F
+#46368D
+#7560BD
+#A68DEF
+#D9BDFF
+Nuances aléatoires
+#10105F
+#8D76D4
+#221A6C
+#000049
+#FFEDFF
+
+
+*/
