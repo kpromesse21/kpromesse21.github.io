@@ -65,8 +65,7 @@ header{
 footer{
     background-color: #494454;
     color: #000049;
-}
-ul{
+}ul{
     list-style: none;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
