@@ -69,7 +69,8 @@ footer{
     height: 200px;
     position: sticky;
     bottom:0% ;
-}ul{
+}
+.foote_list_icon{
     list-style: none;
    display: flex;
    justify-content: center;
